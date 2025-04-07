@@ -4,9 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Court.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 21d06d2afa46fd345a2eac8fd1cece04, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 645f25d79e97c074f9e16ea0151340d3, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 80abbf6b361ebf1489804dce95fad2dd, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 89fbd33299734d343a6b1c77f5282623, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cb611a5d75e02b94488d81d579bb4699, type: 2}

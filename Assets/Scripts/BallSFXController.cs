@@ -6,6 +6,7 @@ public class BallSFXController : MonoBehaviour
     [SerializeField] private AudioSource _netAudioSource;
     [SerializeField] private AudioSource _bounceAudioSource;
     [SerializeField] private AudioSource _rimAudioSource;
+    [SerializeField] private AudioSource _grabAudioSource;
     [SerializeField] private Rigidbody _ballRigidbody;
 
     private const float PITCH_LOWER_BOUND = 0.95f;
@@ -42,5 +43,11 @@ public class BallSFXController : MonoBehaviour
             _netAudioSource.volume = volume;
             _netAudioSource.Play();
         }
+    }
+
+    public void PlayGrabSound()
+    {
+        _grabAudioSource.pitch = Random.Range(PITCH_LOWER_BOUND, PITCH_UPPER_BOUND);
+        _grabAudioSource.Play();
     }
 }
