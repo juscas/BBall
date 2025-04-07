@@ -67,19 +67,19 @@ public class GrabHandler : MonoBehaviour
             
             if (hand == _rightHand)
             {
-                if (_leftHandGrabbedObject == ball.gameObject)
+                if (_leftHandGrabbedObject != null && _leftHandGrabbedObject == ball.gameObject)
                 {
                     return;
                 }
-                _rightHandGrabbedObject = ball.gameObject;
+                _rightHandGrabbedObject = ball?.gameObject;
             }
             else
             {
-                if (_rightHandGrabbedObject == ball.gameObject)
+                if (_rightHandGrabbedObject != null && _rightHandGrabbedObject == ball.gameObject)
                 {
                     return;
                 }
-                _leftHandGrabbedObject = ball.gameObject;
+                _leftHandGrabbedObject = ball?.gameObject;
             }
             
             if (ball != null)
